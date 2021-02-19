@@ -1,0 +1,30 @@
+/* .bodysty{
+  background-image: url("../assets/images/img1.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+
+  height: 700px;
+}
+   */
+   .bodysty{
+    background-image: url("../assets/images/img1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-origin: inherit;
+    background-attachment: inherit;
+    height: 700px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+  }
+  .bodyconent{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    /* width: 500px; */
+    width: 80%;
+    /* padding: 20px; */
+    /* text-align: center; */
+  }
+

@@ -1,0 +1,14 @@
+.lgdiv{
+  width:400px;
+  height:500px;
+  border-radius:7px;
+  margin-top: 50px;
+  /* margin-left: 600px; */
+  background-color: white;
+}
+.a-rg{
+  font-size: 20px;
+   color:rgb(96, 96, 221) ;
+   position: relative;
+  top: 30px;
+}

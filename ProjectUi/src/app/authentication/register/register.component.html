@@ -1,0 +1,83 @@
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-7 col-md-6 col-sm-12">
+
+      </div>
+      <div  class="border col-lg-4 col-md-5 col-sm-12 container bddiv">
+          <h1 style="text-align:center">Project<span style="color:#8181ea; margin-bottom:30px">File</span></h1>
+          <h5 style="text-align:center">Register as a new user</h5>
+
+          <section class="ml-5 mt-5">
+              <form >
+                <div class="form-group input-group ">
+                  <div class="input-group-prepend">
+                      <span class="input-group-text" style="background-color:#ede6d3">
+                          <i class="fas fa-user fa-1x" aria-hidden="true"></i>
+                      </span>
+                  </div>
+                  <div>
+                      <input [(ngModel)]="FirstName"  name="FirstName" type="text"  placeholder="First Name" class="form-control" style="border-bottom-left-radius:0;border-top-left-radius:0" />
+                  </div>
+              </div>
+              <div class="form-group input-group ">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" style="background-color:#ede6d3">
+                        <i class="fas fa-user fa-1x" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div>
+                    <input [(ngModel)]="LastName"  name="LastName" type="text"  placeholder="Last Name" class="form-control" style="border-bottom-left-radius:0;border-top-left-radius:0" />
+                </div>
+            </div>
+                  <div class="form-group input-group ">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" style="background-color:#ede6d3">
+                              <i class="fas fa-user fa-1x" aria-hidden="true"></i>
+                          </span>
+                      </div>
+                      <div>
+                          <input [(ngModel)]="UserName"  name="Username" type="text"  placeholder="username" class="form-control" style="border-bottom-left-radius:0;border-top-left-radius:0" />
+                      </div>
+                  </div>
+                  <div class="form-group input-group ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background-color:#ede6d3">
+                            <i class="fas fa-envelope fa-1x" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <input [(ngModel)]="_email"  name="_email" type="email"  placeholder="Email" class="form-control" style="border-bottom-left-radius:0;border-top-left-radius:0" />
+                    </div>
+                </div>
+                  <div class="form-group input-group">
+                      <div class="input-group-prepend">
+                          <span class="input-group-text" style="background-color:#ede6d3">
+                              <i class="fas fa-lock fa-1x" aria-hidden="true"></i>
+                          </span>
+                      </div>
+                      <div>
+                          <input [(ngModel)]="_password"  name="_password" type="password"  placeholder="password" class="form-control" style="border-bottom-left-radius:0;border-top-left-radius:0" />
+                      </div>
+                  </div>
+                  <ng-template [ngIf]="IsError==true">
+                    <div class="form-group input-group">
+                      <span style="color: rgb(240, 85, 85);">{{Response}}</span>
+                  </div>
+                  </ng-template>
+                  <div class="form-group">
+                      <button type="button" (click)="Onsubmit()"  class="btn btn-sm btn-primary custbtn ">Log in</button>
+                  </div>
+
+                  <div class="ml-4">
+                    <p>
+                      <a routerLink="/" style="font-size: 15px; color:rgb(96, 96, 221) ;position: relative; top: 30px;">Click to return to Login Page</a>
+                    </p>
+                  </div>
+              </form>
+          </section>
+      </div>
+  </div>
+  </div>
+
+

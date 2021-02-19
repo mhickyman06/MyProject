@@ -1,0 +1,13 @@
+.bddiv{
+  width:400px;
+  height:520px;
+  border-radius:7px;
+  margin-top: 52px;
+  background-color: white;
+}
+.custbtn{
+  padding-left: 145px;
+   padding-right: 145px;
+   position: absolute;
+   left: 15px;
+}

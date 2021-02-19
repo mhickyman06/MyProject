@@ -1,0 +1,59 @@
+
+<div class="container">
+  <div class="row">
+      <div class="col-lg-7 col-md-6 col-sm-12">
+
+      </div>
+      <div  class="border col-lg-4 col-md-5 col-sm-12 container bddiv">
+        <h1 style="text-align:center">Project<span style="color:#8181ea; margin-bottom:30px">File</span></h1>
+        <h5 style="text-align:center">Login into your account</h5>
+        <!-- @*<div class="row">
+            <div class="col-md-4">*@ -->
+        <section class="ml-5 mt-5">
+            <form >
+                <div class="form-group input-group ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background-color:#ede6d3">
+                            <i class="fas fa-user fa-1x" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <input [(ngModel)]="Username" name="Username" type="text"  placeholder="username" class="form-control" style="border-bottom-left-radius:0;border-top-left-radius:0" />
+                    </div>
+                </div>
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" style="background-color:#ede6d3">
+                            <i class="fas fa-lock fa-1x" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                    <div>
+                        <input [(ngModel)]="Password" name="Password" type="password"  placeholder="password" class="form-control" style="border-bottom-left-radius:0;border-top-left-radius:0"  />
+                    </div>
+                </div>
+                <ng-template [ngIf]="isError==true">
+                  <div class="form-group input-group">
+                    <span style="color: rgb(240, 85, 85);">{{ErrorMessage}}</span>
+                </div>
+                </ng-template>
+                <div class="ml-3">
+                  <p>
+                    <a id="forgot-password" style="color: rgb(96, 96, 221); font-size: small;" href="#">Forgot your password?</a>
+                </p>
+                </div>
+
+                <div class="form-group">
+                    <button type="button" (click)="Onsubmit()" class="btn btn-sm btn-primary custbtn" >Log in</button>
+                </div>
+                <div class="ml-4">
+                  <p>
+                    <a routerLink="/Authentication/Register" class="a-rg">register as a new user</a>
+                  </p>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>
+
+
+
